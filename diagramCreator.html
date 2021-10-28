@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row bg-primary text-white">
+        <h1>ADF Diagram creator</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Load file</h4>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-10">
+                        <input class="form-control" type="file" id="file-input"/>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="load-file" class="btn btn-primary">Load file</button> 
+                    </div>
+                </div>
+            </div>
+            <h4>Or copy the code</h4>
+            <div class="container-fluid">
+                <div class="mb-3">
+                    <textarea class="form-control" id="code-input" rows="9" style="max-height: 400px; min-height: 120px;"></textarea>
+                    <button type="button" id="load-code" class="btn btn-primary">Load code</button> 
+                </div>
+                <h4>Edit the diagram</h4>
+                <a id="diagram-link" target="_blank"></a>
+            </div>
+                 
+        </div>
+        <div class="col-md-8">
+            <img id="diagram-img">
+        </div>
+    </div>
+</div>
+
+<script src="js/rawdeflate.js"></script>
+<script src="js/plantUML.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
